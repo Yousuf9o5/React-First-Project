@@ -1,6 +1,6 @@
 import React from "react";
-import "./App.css";
-import Search from "./Search";
+import "./Nav bar css file.css";
+import Search from "../Search section folder/Search";
 import NavLinks from "./nav links";
 
 function Nav(prop) {
