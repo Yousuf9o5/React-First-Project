@@ -1,0 +1,133 @@
+.navbar {
+    background-color: #161616;
+    color: white;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    z-index: 999;
+}
+
+.links-section {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.brand-name {
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    margin: .5rem;
+    left: 20px;
+}
+
+.navigations {
+    position: relative;
+    display: flex;
+    margin: 0px;
+    margin-left: 20px;
+    padding: 0px;
+
+}
+
+.navigations li {
+    list-style: none;
+    font-size: 26px;
+    margin: 0px 10px;
+}
+
+
+.navigations li a {
+    position: relative;
+    color: white;
+    display: block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.navbar div ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+.right-section-nav {
+    position: relative;
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    right: 1rem;
+}
+
+.navbar>.toggale {
+    position: absolute;
+    right: 1.5rem;
+    padding: 5px 10px;
+    align-items: center;
+    display: none;
+}
+
+.toggale>i {
+    font-size: 21px;
+}
+
+.toggale>i:hover {
+    color: #858585;
+}
+
+.toggale:hover {
+    color: #858585;
+}
+
+@media (max-width: 1180px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .links-section {
+        display: block;
+        width: 100%;
+    }
+
+    .brand-name {
+        display: block;
+    }
+
+    .navigations {
+        display: block;
+        width: 100%;
+        position: absolute;
+    }
+
+    .navigations li {
+        width: 100%;
+        height: 100%;
+        background-color: #161616;
+        border: 1px solid gray;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom: 0px;
+        display: none;
+    }
+
+    .navbar>.toggale~li {
+        display: block;
+    }
+
+    .navbar>.toggale {
+        display: block;
+    }
+
+    .navigations li:hover {
+        background-color: #313131;
+    }
+
+    .right-section-nav {
+        display: none;
+    }
+}
