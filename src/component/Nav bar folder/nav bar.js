@@ -2,45 +2,24 @@ import React from "react";
 import "./Nav bar css file.css";
 import Search from "../Search section folder/Search";
 import NavLinks from "./nav links";
+import NavPageInfo from "./Nav bar links info";
+function mapping(){
+  const mapp = NavPageInfo().map(x => <NavLinks
+                                      Cname={x.Cname}
+                                      href={x.href}
+                                      iClassname={x.iClassname}
+                                      span={x.span}
+                                      />); 
 
+    return mapp;
+}
 function Nav(prop) {
   return (
     <nav class="navbar" id="mynav">
       <div className="links-section">
         <div className="brand-name">Brand Name</div>
         <ul className="navigations">
-          <NavLinks
-            p={{
-              Cname: "Home",
-              href: "#",
-              iCname: "fa-solid fa-house",
-              span: "title",
-            }}
-          />
-          <NavLinks
-            p={{
-              Cname: "Home",
-              href: "#",
-              iCname: "fa-solid fa-briefcase",
-              span: "title",
-            }}
-          />
-          <NavLinks
-            p={{
-              Cname: "Home",
-              href: "#",
-              iCname: "fa-solid fa-square-poll-horizontal",
-              span: "title",
-            }}
-          />
-          <NavLinks
-            p={{
-              Cname: "Home",
-              href: "#",
-              iCname: "fa-solid fa-address-card",
-              span: "title",
-            }}
-          />
+          {mapping()}
         </ul>
       </div>
       <div className="right-section-nav">

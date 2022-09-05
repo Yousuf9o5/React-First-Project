@@ -2,10 +2,10 @@ import "./Nav bar css file.css";
 
 function NavLinks(prop) {
   return (
-    <li className={prop.p.Cname}>
-      <a href={prop.p.href}>
-        <i className={prop.p.iCname}></i>
-        <span>&nbsp;{prop.p.span}</span>
+    <li className={prop.Cname}>
+      <a href={prop.href}>
+        <i className={prop.iClassname}></i>
+        <span>&nbsp;{prop.span}</span>
       </a>
     </li>
   );
