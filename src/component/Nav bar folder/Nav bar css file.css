@@ -5,8 +5,7 @@
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    height: 60px;
-    z-index: 999;
+    z-index: 1;
 }
 
 .links-section {
@@ -28,24 +27,26 @@
     position: relative;
     display: flex;
     margin: 0px;
-    margin-left: 20px;
+    margin-left: 40px;
     padding: 0px;
 
 }
 
 .navigations li {
+    position: relative;
     list-style: none;
-    font-size: 26px;
-    margin: 0px 10px;
+    font-size: 1.3rem;
+    margin:0 7px;
 }
 
 
 .navigations li a {
     position: relative;
+    font-weight: 700;
     color: white;
     display: block;
-    padding: 10px 30px;
-    border-radius: 50px;
+    padding: 3px 15px;
+    border-radius: 30px;
     transition: all 0.3s ease;
 }
 
@@ -55,13 +56,9 @@
 }
 
 .right-section-nav {
-    position: relative;
     display: flex;
-    width: 20%;
     align-items: center;
     justify-content: center;
-    width: 25%;
-    right: 1rem;
 }
 
 .navbar>.toggale {
