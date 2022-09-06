@@ -3,24 +3,25 @@ import "./Nav bar css file.css";
 import Search from "../Search section folder/Search";
 import NavLinks from "./nav links";
 import NavPageInfo from "./Nav bar links info";
-function mapping(){
-  const mapp = NavPageInfo().map(x => <NavLinks
-                                      Cname={x.Cname}
-                                      href={x.href}
-                                      iClassname={x.iClassname}
-                                      span={x.span}
-                                      />); 
 
-    return mapp;
+function mapping() {
+  const mapp = NavPageInfo().map((x) => (
+    <NavLinks
+      Cname={x.Cname}
+      href={x.href}
+      iClassname={x.iClassname}
+      span={x.span}
+    />
+  ));
+
+  return mapp;
 }
-function Nav(prop) {
+function Nav() {
   return (
     <nav class="navbar" id="mynav">
       <div className="links-section">
         <div className="brand-name">Brand Name</div>
-        <ul className="navigations">
-          {mapping()}
-        </ul>
+        <ul className="navigations">{mapping()}</ul>
       </div>
       <div className="right-section-nav">
         <Search />
