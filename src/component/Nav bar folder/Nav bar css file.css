@@ -5,7 +5,7 @@
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  z-index: 1;
+  z-index: 999;
 }
 
 .links-section {
@@ -43,14 +43,14 @@
   font-weight: 700;
   color: white;
   display: block;
-  padding: 3px 15px;
-  border-radius: 30px;
+  padding: 5px 15px;
+  border-radius: 10px;
   transition: all 0.3s ease;
 }
 
 .navbar div ul li a:hover {
-  background-color: white;
-  color: black;
+  background-color: #313131;
+  color: white;
 }
 
 .right-section-nav {
@@ -94,9 +94,9 @@
   }
 
   .navigations {
-    display: block;
+    display: none;
     width: 100%;
-    position: absolute;
+    right: 5%;
   }
 
   .navigations li {
@@ -107,7 +107,16 @@
     border-left: 0px;
     border-right: 0px;
     border-bottom: 0px;
-    display: none;
+    flex-direction: row;
+  }
+
+  .navbar div ul li a:hover {
+    background-color: transparent;
+    color: white;
+  }
+
+  .navigations.active {
+    display: flex;
   }
 
   .navbar > .toggale ~ li {
@@ -115,7 +124,8 @@
   }
 
   .navbar > .toggale {
-    display: block;
+    display: flex;
+    top: 15px;
   }
 
   .navigations li:hover {

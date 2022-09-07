@@ -7,7 +7,7 @@ function JoinSec() {
       <div className="Page-background">
         <img src="/Pic/apps-for-programmers-scaled.jpg" alt="background"></img>
       </div>
-      <div className="Joining-sec">
+      <div className="Joining-sec" id="Joining-sec">
         <h1>Want Become a Member</h1>
         <button>
           <a href="#">Join Us</a>

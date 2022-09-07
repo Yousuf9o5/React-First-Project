@@ -2,9 +2,42 @@
   position: relative;
   width: 100%;
   height: 500px;
-  border: red solid 1px;
+  text-align: center;
 }
 
 .Card {
-  margin: 30px;
+  position: relative;
+  display: inline-block;
+  max-width: 350px;
+  height: 430px;
+  margin: 50px;
+  box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.309);
+  border-radius: 50px;
+  padding-bottom: 50px;
+  transition: all ease 0.25s;
+}
+
+.Card a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+
+.Card:hover {
+  opacity: 0.8;
+}
+
+.Card img {
+  width: 100%;
+  height: 65%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  object-fit: cover;
+}
+
+.Card label {
+  display: block;
+  margin: 15px;
+  text-align: left;
 }

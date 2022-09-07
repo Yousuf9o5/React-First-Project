@@ -8,15 +8,15 @@ function CardsLayout(prop) {
       <img src={prop.imgadd} alt={prop.alt} className="card-img" />
       <div>
         <label>
-          Language:
+          Language:&nbsp;
           <span>{prop.language}</span>
         </label>
         <label>
-          Creator:
+          Creator:&nbsp;
           <span>{prop.Creator}</span>
         </label>
         <label>
-          Description:
+          Description:&nbsp;
           <span>{prop.Description}</span>
         </label>
       </div>

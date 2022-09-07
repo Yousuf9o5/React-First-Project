@@ -37,13 +37,3 @@ function Nav() {
 }
 
 export default Nav;
-
-// function ed() {
-//   const toggleButton = document.getElementsByClassName("toggale")[0];
-//   const navbar = document.getElementsByClassName("nav-item");
-
-//   toggleButton.addEventListener("click", () => {
-//     for (let i = 0; i < navbar.length; i += 1)
-//       navbar[i].classList.toggle("active");
-//   });
-// }
