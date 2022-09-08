@@ -1,4 +1,5 @@
 .navbar {
+  position: relative;
   background-color: #161616;
   color: white;
   display: flex;
@@ -19,22 +20,21 @@
   position: relative;
   font-size: 32px;
   font-weight: 700;
-  margin: 0.5rem;
-  left: 20px;
+  margin: 0.7rem;
 }
 
 .navigations {
-  position: relative;
   display: flex;
   margin: 0px;
   margin-left: 40px;
   padding: 0px;
+  z-index: 999;
 }
 
 .navigations li {
   position: relative;
   list-style: none;
-  font-size: 1.3rem;
+  font-size: 120%;
   margin: 0 7px;
 }
 
@@ -43,7 +43,7 @@
   font-weight: 700;
   color: white;
   display: block;
-  padding: 5px 15px;
+  padding: 10px 15px;
   border-radius: 10px;
   transition: all 0.3s ease;
 }
@@ -58,13 +58,17 @@
   align-items: center;
   justify-content: center;
 }
+.navbar button {
+  background-color: transparent;
+  border: none;
+}
 
 .navbar > .toggale {
-  position: absolute;
-  right: 1.5rem;
-  padding: 5px 10px;
-  align-items: center;
   display: none;
+  position: absolute;
+  right: 0px;
+  margin: 10px;
+  color: white;
 }
 
 .toggale > i {
@@ -80,59 +84,39 @@
 }
 
 @media (max-width: 1180px) {
-  .navbar {
-    width: 100%;
-  }
-
   .links-section {
+    position: static;
+    background-color: #161616;
+    align-items: flex-start;
     display: block;
-    width: 100%;
   }
-
   .brand-name {
     display: block;
   }
-
   .navigations {
     display: none;
-    width: 100%;
-    right: 5%;
-  }
-
-  .navigations li {
-    width: 100%;
-    height: 100%;
+    position: absolute;
     background-color: #161616;
-    border: 1px solid gray;
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom: 0px;
-    flex-direction: row;
+    margin: 0px;
+    width: 100%;
+    font-size: 3rem;
+    padding: 10px 0px;
   }
-
-  .navbar div ul li a:hover {
-    background-color: transparent;
-    color: white;
+  .navigations > li {
+    margin: 10px;
   }
-
-  .navigations.active {
-    display: flex;
+  .navigations > li > a {
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    border-radius: 0px;
+    top: -5px;
+    padding-top: 5px;
+    padding-bottom: 10px;
   }
-
-  .navbar > .toggale ~ li {
-    display: block;
-  }
-
-  .navbar > .toggale {
-    display: flex;
-    top: 15px;
-  }
-
-  .navigations li:hover {
-    background-color: #313131;
-  }
-
   .right-section-nav {
     display: none;
+  }
+  .navbar > .toggale {
+    display: flex;
   }
 }

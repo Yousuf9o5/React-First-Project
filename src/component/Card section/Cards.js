@@ -5,6 +5,7 @@ import CardsLayout from "./Card layout";
 function mapping() {
   const info = CardsInfo().map((x) => (
     <CardsLayout
+      key={x.id}
       link={x.link}
       imgadd={x.imgadd}
       alt={x.alt}

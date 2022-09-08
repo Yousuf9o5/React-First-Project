@@ -4,12 +4,12 @@ import Cards from "./component/Card section/Cards";
 
 import "./App.css";
 
-function App() {
+function App(x) {
   return (
     <div>
-      <Nav />
+      <Nav click={x.click} />
       <JoinSec />
-      <Cards />
+      {/* <Cards /> */}
     </div>
   );
 }

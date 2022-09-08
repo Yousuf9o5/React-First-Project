@@ -49,3 +49,22 @@
 .JoinSec .Joining-sec button:hover {
   opacity: 0.7;
 }
+
+@media (max-width: 700px) {
+  * {
+    font-size: 70%;
+  }
+  .JoinSec .Joining-sec {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+  }
+
+  .JoinSec .Joining-sec h1 {
+    width: 100%;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.404) 0px 6px 20px;
+  }
+}
