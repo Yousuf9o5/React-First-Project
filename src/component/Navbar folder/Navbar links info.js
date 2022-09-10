@@ -1,4 +1,4 @@
-import "./Nav bar css file.css";
+import "./Navbar css file.css";
 
 function NavPageInfo() {
   const info = [
